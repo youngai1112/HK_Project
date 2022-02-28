@@ -1,5 +1,6 @@
 # kaggle
 movies_metadata.csv
+ratings.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
