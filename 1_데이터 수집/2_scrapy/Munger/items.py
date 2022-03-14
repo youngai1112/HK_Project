@@ -3,13 +3,13 @@
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/items.html
 
-# data를 class 형태로 만들 수 있다. 
-
-
 import scrapy
 
-
-class TutorialItem(scrapy.Item):
+class MungerItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    title = scrapy.Field()
+    price = scrapy.Field()
+    img = scrapy.Field()
+    link = scrapy.Field()
+    
