@@ -1,5 +1,5 @@
 import scrapy
-from spider.items import spiderItem
+from tutorial.items import spiderItem
 
 class ExampleSpider(scrapy.Spider):     # class 명은 자유기재, scrapy.Spider을 상속받아야 한다. 
     name = 'spider'                     # Spider를 지정할 수 있는 unique한 name을 지정
@@ -25,8 +25,9 @@ class ExampleSpider(scrapy.Spider):     # class 명은 자유기재, scrapy.Spid
 
     def page_parse(self, response):
         item = spiderItem()
-        title = response.xpath('//*[@id="contentarea_left"]/div[2]/dl/dt[1]/a/text()').extract()
-        item["date"] = response.xpath('//*[@id="contentarea_left"]/div[2]/dl/dd[1]/span/text()')[2].extract().split()[0]
-        item["time"] = response.xpath('//*[@id="contentarea_left"]/div[2]/dl/dd[1]/span/text()')[2].extract().split()[1]
-        item["link"] = response.url
-        yield item
+        for sel in response.xpath('//*[@id="contentarea_left"]/div[2]/dl'):
+            title = response.xpath('dt[1]/a/text()').extract()
+            item["date"] = response.xpath('dd[1]/span/text()')[2].extract().split()[0]
+            item["time"] = response.xpath('dd[1]/span/text()')[2].extract().split()[1]
+            item["link"] = response.xpath('dt[1]/a/@href')
+            yield item

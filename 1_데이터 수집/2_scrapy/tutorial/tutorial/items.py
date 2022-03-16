@@ -13,4 +13,5 @@ import scrapy
 class TutorialItem(scrapy.Item):    # Item을 만들 때, scrapy.Item을 상속받아야 한다.
     title = scrapy.Field()          # Item을 만들 때, scrapy.Field()를 사용해야 한다. 
     link = scrapy.Field()
-    desc = scrapy.Field()
+    date = scrapy.Field()
+    time = scrapy.Field()
