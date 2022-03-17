@@ -13,6 +13,8 @@ KOSDAQ0305.xlsx
 ratings_train.txt
 ratings_test.txt
 bigkinds_NewsData.xlsx
+Newsfile3.csv
+
 
 # kaggle
 movies_metadata.csv
