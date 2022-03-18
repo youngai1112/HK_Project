@@ -1,20 +1,5 @@
 # data
-KOSDAQ_완료.xlsx
-KOSDAQROE5Years.xlsx
-KOSDAQROE15.xlsx
-KOSPI_완료.xlsx
-KOSPIROE5years.xlsx
-KOSPIROE15.xlsx
-KOSPI데이터0305.xlsx
-KOSDAQ0305.xlsx
-kospi_ROE_11_upper.xlsx
-kosdaq_ROE_11_upper.xlsx
-KOSDAQ0305.xlsx
-ratings_train.txt
-ratings_test.txt
-bigkinds_NewsData.xlsx
-Newsfile3.csv
-
+/data
 
 # kaggle
 movies_metadata.csv
