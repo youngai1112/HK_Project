@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title> About Us </title>
+
+    <link rel="stylesheet" href="{% static 'blog/bootstrap/bootstrap.min.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'single_pages/css/about_me.css' %}" media="screen">
+    <script src="https://kit.fontawesome.com/726bbd6862.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+{% include 'blog/navbar.html' %}
+
+<section>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1>HK_1조</h1>
+                <br/>
+                <p class="lead">
+                    21.11.9일자로 시작한 교육<br/>
+                    인공지능 프로젝트 1팀입니다.
+                </p>
+
+                <ul>
+                    <li>Education</li>
+                    <ul>
+                        <li>파이썬 기초, 크롤링, DB, 판다스, 넘파이, Django(2021.11.9 ~ 12.17)</li>
+                        <li>머신러닝, 딥러닝(2021.12.20 ~ 1.28)</li>
+                        <li>Uipath 기초 과정(2021.1.28 ~ 2.18)</li>
+                        <li>프로젝트(2021.2.21 ~)</li>
+                    </ul>
+                    <li>Introduce</li>
+                    <ul>
+                        <li>김선미, Qt desing, Django</li>
+                        <li>박민수, 데이터 크롤링 및 DB</li>
+                        <li>박은찬, 모델 분석(주식 가격 분석을 통한 미래 주가 흐름 분석)</li>
+                        <li>이가영, 모델 분석(주식데이터를 통한 네이버 뉴스 긍정 부정 분석)</li>
+                    </ul>
+                </ul>
+
+            </div>
+            <div class="col-lg-4">
+                <img class="img-fluid" src="{% static 'static/single_pages/image/0303.jpg' %}">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<div class="fixed-bottom">
+    {% include 'blog/footer.html' %}
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+</body>
+</html>
