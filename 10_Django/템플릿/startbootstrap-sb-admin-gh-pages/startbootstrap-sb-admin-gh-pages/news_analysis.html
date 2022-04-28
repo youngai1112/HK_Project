@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Tables - SB Admin</title>
+        <title>NEWS ANALYSIS</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -43,9 +43,13 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">메뉴</div>
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="home.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 HOME
+                            </a>
+                            <a class="nav-link" href="about_us.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                ABOUT US
                             </a>
                             <!-- <div class="sb-sidenav-menu-heading">Interface</div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
@@ -59,11 +63,7 @@
                                     <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
                                 </nav>
                             </div>
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
-                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                                ABOUT US
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
+                           
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                                     <!-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
@@ -91,13 +91,17 @@
                                 </nav>
                             </div>
                             <!-- <div class="sb-sidenav-menu-heading">Addons</div> -->
-                            <a class="nav-link" href="charts.html">
+                            <a class="nav-link" href="models.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 MODELS
                             </a>
-                            <a class="nav-link" href="tables.html">
+                            <a class="nav-link" href="news_analysis.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 NEWS ANALYSIS
+                            </a>
+                            <a class="nav-link" href="information.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                INFORMATION
                             </a>
                         </div>
                     </div>
@@ -110,101 +114,99 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Tables</h1>
+                        <h1 class="mt-4">NEWS ANALYSIS</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                            <li class="breadcrumb-item active">Tables</li>
+                            <li class="breadcrumb-item"><a href="index.html">HOME</a></li>
+                            <li class="breadcrumb-item active">NEWS ANALYSIS</li>
                         </ol>
                         <div class="card mb-4">
                             <div class="card-body">
-                                DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the
-                                <a target="_blank" href="https://datatables.net/">official DataTables documentation</a>
-                                .
+                                Update : Today ( 09:00 ~ 15:15)
                             </div>
                         </div>
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                DataTable Example
+                                뉴스분석
                             </div>
                             <div class="card-body">
                                 <table id="datatablesSimple">
                                     <thead>
                                         <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
+                                            <th>일자</th>
+                                            <th>언론사</th>
+                                            <th>제목</th>
+                                            <th>매수추천</th>
+                                            <th>매도추천</th>
+                                            <th>판단 요망</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
+                                            <th>일자</th>
+                                            <th>언론사</th>
+                                            <th>제목</th>
+                                            <th>매수추천</th>
+                                            <th>매도추천</th>
+                                            <th>판단요망</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                         <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
-                                            <td>$320,800</td>
+                                            <td>20220422</td>
+                                            <td>머니투데이</td>
+                                            <td>[갈 테마 가라] 2분기엔 턴어라운드 미리 선점해야 할 반도체 탑픽은?</td>
+                                            <td>매수추천</td>
+                                            <td>매도추천</td>
+                                            <td>판단요망</td>
                                         </tr>
                                         <tr>
-                                            <td>Garrett Winters</td>
-                                            <td>Accountant</td>
-                                            <td>Tokyo</td>
-                                            <td>63</td>
-                                            <td>2011/07/25</td>
-                                            <td>$170,750</td>
+                                            <td>20220422</td>
+                                            <td>한국경제</td>
+                                            <td>[ET시론]'중국 반도체 굴기' 위기와 기회</td>
+                                            <td>매수추천</td>
+                                            <td>매도추천</td>
+                                            <td>판단요망</td>
                                         </tr>
                                         <tr>
-                                            <td>Ashton Cox</td>
-                                            <td>Junior Technical Author</td>
-                                            <td>San Francisco</td>
-                                            <td>66</td>
-                                            <td>2009/01/12</td>
-                                            <td>$86,000</td>
+                                            <td>20220422</td>
+                                            <td>전자신문</td>
+                                            <td>SK하이닉스 삼성전자 '상승세' 간밤 美 반도체株 영향</td>
+                                            <td>매수추천</td>
+                                            <td>매도추천</td>
+                                            <td>판단요망</td>
                                         </tr>
                                         <tr>
-                                            <td>Cedric Kelly</td>
-                                            <td>Senior Javascript Developer</td>
-                                            <td>Edinburgh</td>
-                                            <td>22</td>
-                                            <td>2012/03/29</td>
-                                            <td>$433,060</td>
+                                            <td>20220422</td>
+                                            <td>매일신문</td>
+                                            <td>‘원자재 쇼크’에 반도체 자동차 가격 인상 ‘도미노’[뒷북비즈]</td>
+                                            <td>매수추천</td>
+                                            <td>매도추천</td>
+                                            <td>판단요망</td>
                                         </tr>
                                         <tr>
-                                            <td>Airi Satou</td>
-                                            <td>Accountant</td>
-                                            <td>Tokyo</td>
-                                            <td>33</td>
-                                            <td>2008/11/28</td>
-                                            <td>$162,700</td>
+                                            <td>20220422</td>
+                                            <td>아주경제</td>
+                                            <td>[단독] 대만의 반도체 공습 파운드리 이어 AP도 삼킨다</td>
+                                            <td>매수추천</td>
+                                            <td>매도추천</td>
+                                            <td>판단요망</td>
                                         </tr>
                                         <tr>
-                                            <td>Brielle Williamson</td>
-                                            <td>Integration Specialist</td>
-                                            <td>New York</td>
-                                            <td>61</td>
-                                            <td>2012/12/02</td>
-                                            <td>$372,000</td>
+                                            <td>20220422</td>
+                                            <td>아시아경제</td>
+                                            <td>“세계 1등 대만 반도체보다 잘 싸웠지만 ” 고민 커진 삼성 왜? [비즈360]</td>
+                                            <td>매수추천</td>
+                                            <td>매도추천</td>
+                                            <td>판단요망</td>
                                         </tr>
                                         <tr>
-                                            <td>Herrod Chandler</td>
-                                            <td>Sales Assistant</td>
-                                            <td>San Francisco</td>
-                                            <td>59</td>
-                                            <td>2012/08/06</td>
-                                            <td>$137,500</td>
+                                            <td>20220422</td>
+                                            <td>한국경제</td>
+                                            <td>원자잿값 상승 '반도체 배터리 자동차' 주가 맥못추네</td>
+                                            <td>매수추천</td>
+                                            <td>매도추천</td>
+                                            <td>판단요망</td>
                                         </tr>
                                         <tr>
                                             <td>Rhona Davidson</td>
