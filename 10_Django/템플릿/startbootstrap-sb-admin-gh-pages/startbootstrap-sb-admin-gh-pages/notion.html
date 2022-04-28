@@ -1,136 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>INFORMATION</title>
-        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
-        <link href="css/styles.css" rel="stylesheet" />
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    </head>
-    <body class="sb-nav-fixed">
-        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html">Stock Watch</a>
-            <!-- Sidebar Toggle-->
-            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-            <!-- Navbar Search-->
-            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-                <div class="input-group">
-                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
-                </div>
-            </form>
-            <!-- Navbar-->
-            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#!">Settings</a></li>
-                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#!">Logout</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <div id="layoutSidenav">
-            <div id="layoutSidenav_nav">
-                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-                    <div class="sb-sidenav-menu">
-                        <div class="nav">
-                            <div class="sb-sidenav-menu-heading">메뉴</div>
-                            <a class="nav-link" href="home.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                HOME
-                            </a>
-                            <a class="nav-link" href="about_us.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                ABOUT US
-                            </a>
-                            <!-- <div class="sb-sidenav-menu-heading">Interface</div>
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Layouts
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div> -->
-                            </a>
-                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="layout-static.html">Static Navigation</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
-                                </nav>
-                            </div>
-                           
-                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                    <!-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
-                                        Authentication
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a> -->
-                                    <!-- <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                        <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="login.html">Login</a>
-                                            <a class="nav-link" href="register.html">Register</a>
-                                            <a class="nav-link" href="password.html">Forgot Password</a>
-                                        </nav>
-                                    </div> -->
-                                    <!-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
-                                        Error
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
-                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                        <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="401.html">401 Page</a>
-                                            <a class="nav-link" href="404.html">404 Page</a>
-                                            <a class="nav-link" href="500.html">500 Page</a>
-                                        </nav>
-                                    </div> -->
-                                </nav>
-                            </div>
-                            <!-- <div class="sb-sidenav-menu-heading">Addons</div> -->
-                            <a class="nav-link" href="models.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                                MODELS
-                            </a>
-                            <a class="nav-link" href="news_analysis.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                NEWS ANALYSIS
-                            </a>
-                            <a class="nav-link" href="information.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                INFORMATION
-                            </a>
-                        </div>
-                    </div>
-                    <!-- <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
-                        Start Bootstrap
-                    </div> -->
-                </nav>
-            </div>
-            <div id="layoutSidenav_content">
-                <main>
-                        
-                </main>
-
-                <div>
-                    <img src="C:\Users\hkedu\Desktop\1.jpg" >
-                </div>
-              
-
-
-
-                
-        
-
-
-
-
-
-                <span class="border">
 
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>재무제표 개념 정리</title><style>
     /* cspell:disable-file */
@@ -151,13 +18,13 @@
     @media only screen {
         body {
             margin: 2em auto;
-            max-width: 1500px;
+            max-width: 900px;
             color: rgb(55, 53, 47);
         }
     }
     
     body {
-        line-height: 1;
+        line-height: 1.5;
         white-space: pre-wrap;
     }
     
@@ -803,28 +670,3 @@
     </style></head><body><article id="9a8e7ea1-d016-42e9-a266-76363d387e99" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🔎</span></div><h1 class="page-title">재무제표 개념 정리</h1></header><div class="page-body"><h1 id="1a6b2da9-f0ac-4423-a7a7-e28012f3da69" class="">📝<mark class="highlight-red">재무제표 지표</mark></h1><h2 id="482f79ad-5b7e-4d86-9e91-780931617e2d" class="">PER : 주가수익비율</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="f6656a8b-e1b8-4a27-a546-c6923ad6d069"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><strong>PER이 낮으면 이익에 비해 주가가 낮다</strong>는 것이므로 그만큼 <span style="border-bottom:0.05em solid"><strong>기업 가치에 비해 주가가 저평가돼 있다</strong></span>는 의미로 해석 (기업의 수익성과 주가를 평가)</div></figure><h2 id="e7ed1f07-eea4-4642-bc17-6939afab7779" class="">ROE : 자기자본이익률</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="d1991f27-3d7e-4c43-8e20-e0ff772424ee"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><strong>투입한 자기자본이 얼마만큼의 이익을 냈는지</strong>를 나타내는 지표 ⇒ <strong>ROE가 높은 종목</strong>일수록 <span style="border-bottom:0.05em solid"><strong>주식투자자의 투자수익률을 높여준다</strong></span>는 의미로 해석</div></figure><h2 id="40a691e0-5bb8-46e8-9161-d70301633732" class="">ROA : 총자산순이익률</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="8799f3b2-fe66-474e-aa52-8a3b983195e9"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">기업의 일정기간 순이익을 자산총액으로 나누어 계산한 수치로, <span style="border-bottom:0.05em solid"><strong>특정기업이 자산을 얼마나 효율적으로 운용했느냐</strong></span>를 나타냄</div></figure><h2 id="1e331fd4-29c6-468c-a6fc-95e341e260fc" class="">PBR : 주당순자산</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="457ad293-830d-4b0b-a446-ae6335ec67c7"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">주가÷주당순자산 ⇒ <span style="border-bottom:0.05em solid"><strong>배수가 낮을수록 기업의 성장력, 수익력이 높다</strong></span>는 의미 (<strong>기업의 재무상태면에서 주가를 판단</strong>)</div></figure><h2 id="62be6b6b-4753-4bf6-9125-d928ca3c45c8" class="">PSR : 주가매출비율</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="e9da87a3-6077-4876-bbf1-27b2427b8a1f"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">주가를 주당 매출액으로 나눈 것으로 <strong>기업의 성장성</strong>에 주안점을 두고 <span style="border-bottom:0.05em solid"><strong>상대적으로 저평가된 주식을 발굴하는 데 이용하는 성장성 투자지표 </strong></span>⇒ PSR이 <span style="border-bottom:0.05em solid">낮을수록 저평가</span></div></figure><h2 id="fe9cc11b-cf32-4073-89c4-564d5809a282" class="">PCR : 주가현금흐름비율</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="9728b244-963c-4e45-b7d4-b59e62a50dcf"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">현 주가가 <strong>기업의 자금조달능력이나 순수영업성과에 비해 어떻게 평가되어 있는가를 판단</strong>하는 데 사용 ⇒ PCR은 수치가 <span style="border-bottom:0.05em solid">낮을수록 주가가 저평가</span></div></figure><h2 id="df217b97-6346-424b-9909-776ec8ad13bd" class="">시가총액</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="bb144dbc-1622-445b-84f5-7afd3f447a17"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><strong>기업이 발행한 모든 주식을 시가로 평가</strong>한 금액 ⇒ <strong>기업의 총체적인 시장가치</strong></div></figure><h2 id="2586d836-31c0-462a-b1cf-ad3392384e1a" class="">매출액</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="60b1b0c6-7a67-416d-86d1-3fc212ddb736"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><strong>상품의 매출 또는 용역의 제공에 대한 수입금액</strong></div></figure><h2 id="c2167d6e-57a6-4b02-8b62-06e98c0ac46e" class="">현금흐름</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="7e8026f4-c20c-4683-8cc0-186f94c65a91"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><span style="border-bottom:0.05em solid">들어오는 자금을 현금유입</span>, <span style="border-bottom:0.05em solid">나가는 돈은 현금유출</span>이라 하며 일정 기간 동안 <strong>현금유입과 현금유출의 차이인 순현금흐름을 일반적으로 현금흐름</strong>이라고 정의함</div></figure><h2 id="ed4b05b7-58fa-453c-9b4c-9ab79c2dc27e" class="">자산</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="9e1e1073-9285-4b77-9a5a-24f341411c97"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">자산이란 기업이 소유하고 있는 유형, 무형의 유가치물 ⇒ 회계상으로는 유동자산, 고정자산, 이연자산으로 구분</div></figure><h2 id="e5b0252f-961e-4eff-989b-323a3640a344" class="">부채</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="8bba653c-6ad2-4103-a50b-8eb74af168db"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">기업이 출자자(주식회사이면 주주) 이외의 제3자로부터 빌고있는 자금 ⇒ 대차대조표에는 부채를 유동부채, 고정부채, 충당금으로 구분</div></figure><h2 id="b270a60a-4f25-4052-82ac-5c345e5aea1e" class="">자본</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="0a82be4e-ad88-4233-9491-aeba9f737a72"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">자본은 구체적인 실체를 가지지 않고 자산총액에서 부채총액을 차감한 <strong>순재산</strong>을 의미</div></figure><h2 id="5c25b229-1288-48b4-b938-a04583a73ad3" class="">주당순이익</h2><blockquote id="11230d37-a2aa-46d0-b415-df0df9e927b5" class=""><strong>당기순이익</strong> : <mark class="highlight-gray_background">기업이 일정 기간 동안 얻은 모든 수익에서 지출한 모든 비용을 공제하고 </mark><strong><mark class="highlight-gray_background">순수하게 이익으로 남은 몫</mark></strong></blockquote><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="8a49d51c-14c4-42cb-a853-e7f878b9cd3b"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">당기순이익에서 우선주 배당금을 차감한 보통주 당기순이익을 보통주 주식 수로 나눈 값 ⇒ <strong>기업의 자본 규모에 관계없이 한 주당 수익</strong>을 나타내어 <strong>기업 간 수익성을 비교하는 데 용이</strong>한 지표</div></figure><p id="30cb62a2-6d5f-44d3-b4c7-ff345dd07f9a" class="">
     </p><p id="2f5e2d71-d01e-4016-af67-c78b3992385b" class="">
     </p></div></article></body></html>
-                </span>
-
-                <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2022</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </div>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="assets/demo/chart-area-demo.js"></script>
-        <script src="assets/demo/chart-bar-demo.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
-        <script src="js/datatables-simple-demo.js"></script>
-    </body>
-</html>
